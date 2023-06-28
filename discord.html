@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(88, 101, 242);
+            color: white;
+            background-image: url(src/discordBackground.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* div{
+            border-color: red;
+            border-style: solid;
+        } */
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .login-box {
+            display: flex;
+            width: 60vw;
+            height: 50vh;
+            background-color: rgb(49, 51, 56);
+            border-radius: 10px;
+        }
+
+        .login-info {
+            flex-grow: 2;
+            margin: 20px;
+        }
+
+        .welcom-title {
+            text-align: center;
+        }
+
+        .main-title {
+            margin: 20px;
+            font-weight: 900;
+            font-size: 16pt;
+            line-height: 0.1;
+        }
+
+        .sub-title {
+            font-size: 10pt;
+            color: rgb(240, 230, 230);
+        }
+
+        .user-login{
+            height: 400px;
+            justify-content: space-around;
+        }
+
+        .email-or-tel{
+            margin-bottom: 22px;
+            font-size: 9pt;
+            line-height: 3;
+        }
+
+        .email-or-tel input {
+            background-color: rgb(30, 31, 34);
+            border-style: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 38px;
+        }
+
+        .password{
+            margin-bottom: 22px;
+            font-size: 9pt;
+            line-height: 3;
+        }
+
+        .password input {
+            background-color: rgb(30, 31, 34);
+            border-style: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 38px;
+        }
+
+        .login-btn{
+            font-size: 9pt;
+            line-height: 3;
+        }
+
+        .login-btn input {
+            background-color: rgb(88, 101, 242);
+            color: white;
+            border-style: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 40px;
+        }
+
+        .login-qr {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .qr-img {
+            border-radius: 5px;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+        .qr-main-title{
+            margin-top: 20px;
+            font-weight: 900;
+            font-size: 20pt;
+            line-height: 0.1;
+        }
+    </style>
+    <title>My Discord</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="login-box">
+            <div class="login-info">
+                <div class="welcom-title">
+                    <p class="main-title">돌아오신 것을 환영해요!</p>
+                    <p class="sub-title">다시 만나다니 너무 반가워요!</p>
+                </div>
+                <div class="user-login">
+                    <div class="email-or-tel">
+                        이메일 또는 전화번호 <span style="color: rgb(216, 61, 65);">*</span> <br>
+                        <input type="text">
+                    </div>
+                    <div class="password">
+                        비밀번호 <span style="color: rgb(216, 61, 65);">*</span> <br>
+                        <input type="password"> <br>
+                        <div style="color: rgb(0, 168, 252);">비밀번호를 잊으셨나요?</div>
+                    </div>
+                    <div class="login-btn">
+                        <input type="button" value="로그인"></input> <br>
+                        계정이 필요한가요? <span style="color: rgb(0, 168, 252);">가입하기</span>
+                    </div>
+                </div>
+            </div>
+            <div class="login-qr">
+                <div class="qr-img"><img src="src/qrcode.png" alt=""></div>
+                <p class="qr-main-title">QR코드로 로그인</p>
+                <p><strong>Discord 모바일 앱</strong>으로 스캔해 바로 로그인 하세요.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
